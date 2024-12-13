@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFO Sightings</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: black; 
+      color: white;
+    }
+    h1 {
+      color: limegreen; /* Lime green color */
+      font-weight: bold; /* Makes text bold */
+      text-align: center; /* Centers the title */
+      margin: 20px 0; /* Adds spacing around the title */
+      font-family: Arial, sans-serif;
+    }
+    #toggle-container {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    .toggle-btn {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 5px 15px;
+        background-color: #444;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .toggle-btn:hover {
+        background-color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<h1>UFO Sightings</h1> <!-- Visible title -->
+
+<div id="toggle-container">
+    <button id="shape-btn" class="toggle-btn" onclick="setFilter(0)">Shape</button>
+    <button id="country-btn" class="toggle-btn" onclick="setFilter(1)">Country</button>
+    <button id="year-btn" class="toggle-btn" onclick="setFilter(2)">Year</button>
+    <button id="duration-btn" class="toggle-btn" onclick="setFilter(3)">Duration</button>
+</div>
+
+<style>
+  /* General button styling */
+  .toggle-btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #444;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .toggle-btn:hover {
+    background-color: #666;
+  }
+
+  /* Custom font colors for each button */
+  #shape-btn {
+    color: red;
+  }
+
+  #country-btn {
+    color: blue;
+  }
+
+  #year-btn {
+    color: green;
+  }
+
+  #duration-btn {
+    color: orange;
+  }
+</style>
+
+
+<script src="FinalProject.js"></script>
+</body>
+</html>
